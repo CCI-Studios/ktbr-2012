@@ -1,5 +1,5 @@
 /* columns */
-var CCI = CCI || {};
+var CCI = window.CCI || {};
 CCI.Columns = new Class({
 
 	container: null,
@@ -10,8 +10,9 @@ CCI.Columns = new Class({
 	offset: null,
 
 	initialize: function(container, selector) {
-		if (!container)
+		if (!container) {
 			return;
+		}
 		
 		this.container = container;
 		this.selector = selector;
@@ -20,7 +21,9 @@ CCI.Columns = new Class({
 		this.offset = 20;
 		this.height = 0;
 		
-		for (i = this.columns.length - 1; i >= 0; i--) {
+		var i, _len, height;
+		height = 0;
+		for (i = 0, _len = this.columns.length; i < _len; i++) {
 			height = this.columns[i].getSize().y - this.offset;
 			if (height > this.height) {
 				this.height = height;

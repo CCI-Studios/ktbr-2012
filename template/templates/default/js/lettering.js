@@ -22,7 +22,9 @@ provides: Element.lettering
 	var injector = function(t, splitter, klass, after){
 		var a = t.get('text').split(splitter), inject = '';
 
-		if (!a.length) return;
+		if (!a.length) {
+			return;
+		}
 
 		a.each(function(item, i) {
 			inject += '<span class="' + klass + (i + 1) + '">' + item + '</span>' + after;
@@ -41,7 +43,7 @@ provides: Element.lettering
 		},
 
 		lines : function() {
-			return injector(this, /<br[^>]*>/gi, 'line', '');
+			return injector(this, '/<br[^>]*>/gi', 'line', '');
 		},
 
 		custom: function(options) {
@@ -51,10 +53,11 @@ provides: Element.lettering
 	};
 
 	Element.implement('lettering', function(method, options){
-		if (method && methods[method])
+		if (method && methods[method]) {
 			methods[method].apply(this, Array.from(options));
-		else if (method === 'letters' || !method )
+		} else if (method === 'letters' || !method ) {
 			methods.init.apply(this);
+		}
 
 		return this;
 	});

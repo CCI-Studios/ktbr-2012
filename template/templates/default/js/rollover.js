@@ -1,4 +1,4 @@
-var CCI = CCI || {}
+var CCI = window.CCI || {};
 CCI.Rollover = new Class({
 	Implements: Options,
 	
@@ -11,7 +11,8 @@ CCI.Rollover = new Class({
 		this.setOptions(options);
 		var images = $$(selector);
 		
-		for (i = images.length - 1; i >= 0; i--) {
+		var i, _len;
+		for (i = 0, _len = images.length; i < _len; i++) {
 			this._setupImage(images[i]);
 		}
 		
@@ -21,12 +22,13 @@ CCI.Rollover = new Class({
 		var normal, over, index;
 		
 		normal = image.src;
-		index = normal.lastIndexOf(this.options.normal_text); 
-		if (index === -1)
+		index = normal.lastIndexOf(this.options.normal_text);
+		if (index === -1) {
 			return;
+		}
 			
-		over = normal.substr(0, index) + 
-			this.options.over_text + 
+		over = normal.substr(0, index) +
+			this.options.over_text +
 			normal.substr(index + this.options.normal_text.length);
 		
 		image.addEvents({
@@ -36,7 +38,7 @@ CCI.Rollover = new Class({
 			mouseleave: function() {
 				image.src = normal;
 			}
-		})
+		});
 	}
 	
 });
