@@ -4,10 +4,10 @@ window.addEvent('domready', function() {
 	new CCI.Rollover('li.item-122 img, li.item-105 img', { normal_text: '.', over_text: '_rollover.'});
 
 	// image lettering
-	$$('h1, h2, h3, h4, h5, h6').lettering('words');
+	// $$('h1, h2, h3, h4, h5, h6').lettering('words');
 });
 
 window.addEvent('load', function () {
 	// columns
-	c = new CCI.Columns($('bottom'), '.module > div > div');
+	// new CCI.Columns($('bottom'), '.module > div > div');
 });
