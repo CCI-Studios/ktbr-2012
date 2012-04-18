@@ -14,7 +14,7 @@ set :user, "USERNAME"
 set :use_sudo, false
 
 # Joomla
-set :joomla_url, "http://joomlacode.org/gf/download/frsrelease/15278/66555/Joomla_1.7.0-Stable-Full_Package.zip"
+set :joomla_url, "http://joomlacode.org/gf/download/frsrelease/16914/73508/Joomla_2.5.4-Stable-Full_Package.zip"
 set :nooku_url, "http://svn2.assembla.com/svn/nooku-framework/tags/12.1/code"
 set :symlinker_url, "https://github.com/jbennett/symlinker/raw/master/link.php"
 
@@ -58,14 +58,12 @@ namespace :deploy do
       # install DB and create default admin
       template = ERB.new(File.read('config/templates/joomla.sql.erb'), nil, '<>')
       structure = template.result(binding)
-      template = ERB.new(File.read('config/templates/data.sql.erb'), nil, '<>')
-      data = template.result(binding)
 
       t = <<-sql
         INSERT INTO #{db_prefix}_users VALUES (42, 'Administrator', 'admin', 'dummy@example.com', concat(md5(concat('#{admin_pass}', '1234')), ':1234'), 'depreciated', 0, 1, '0000-00-00', '0000-00-00', '', '');
         INSERT INTO #{db_prefix}_user_usergroup_map VALUES(42, 8);
       sql
-      put "#{structure}#{data}#{t}\n", "#{deploy_to}/shared/joomla.sql"
+      put "#{structure}#{t}\n", "#{deploy_to}/shared/joomla.sql"
       run "mysql -u#{db_user} -p\"#{db_pass}\" -hlocalhost #{db_name} < #{deploy_to}/shared/joomla.sql"
     end
 

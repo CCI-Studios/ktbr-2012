@@ -1,9 +1,12 @@
 <?php
 class JConfig {
-	public $offline = '1';
+	public $offline = '0';
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
+	public $display_offline_message = '1';
+	public $offline_image = '';
 	public $sitename = '<%= site_name %>';
-	public $editor = 'jce';
+	public $editor = 'tinymce';
+	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
 	public $debug = '0';
@@ -17,8 +20,8 @@ class JConfig {
 	public $live_site = '';
 	public $secret = '<%= secret_hash %>';
 	public $gzip = '1';
-	public $error_reporting = '-1';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help16:{keyref}';
+	public $error_reporting = 'default';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
 	public $ftp_user = '';
@@ -29,7 +32,7 @@ class JConfig {
 	public $offset_user = 'UTC';
 	public $mailer = 'mail';
 	public $mailfrom = 'info@example.com';
-	public $fromname = 'info';
+	public $fromname = '<%= site_name %>';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = '';
@@ -42,20 +45,17 @@ class JConfig {
 	public $cachetime = '15';
 	public $MetaDesc = '';
 	public $MetaKeys = '';
+	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
+	public $MetaVersion = '0';
+	public $robots = '';
 	public $sef = '1';
-	public $sef_rewrite = '1';
-	public $sef_suffix = '1';
+	public $sef_rewrite = '0';
+	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $log_path = '<%= public %>/logs';
 	public $tmp_path = '<%= public %>/tmp';
-	public $lifetime = '120';
+	public $lifetime = '15';
 	public $session_handler = 'database';
-	public $MetaRights = '';
-	public $sitename_pagetitles = '1';
-	public $force_ssl = '0';
-	public $feed_email = 'author';
-	public $cookie_domain = '';
-	public $cookie_path = '';
 }
