@@ -35,10 +35,4 @@
 		<position>bottom</position>
 		<position>footer</position>
 	</positions>
-
-	<config>
-		<fields name="params">
-			
-		</fields>
-	</config>
 </extension>
