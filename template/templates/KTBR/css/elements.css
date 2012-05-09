@@ -1,17 +1,31 @@
 /* elements */
 body, select, input, textarea {
-  color: #444;
-  /* off black */
-  font-family: Helvetica, Arial, sans-serif; }
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.7); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-family: "Copperplate Gothic Light";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: url("../images/bg_headers.png") bottom center no-repeat;
+  padding: 10px 0; }
 
 a, a:active, a:visited {
-  color: #607890;
+  color: #ffffff;
   text-decoration: none; }
 
 a:hover {
-  color: #036;
+  color: #c00000;
   text-decoration: underline; }
+
+h1 {
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.41);
+  margin: 20px 0; }
+
+h2, h3 {
+  font-size: 14px; }
