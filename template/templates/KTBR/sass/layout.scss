@@ -8,3 +8,29 @@
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
+#header {
+	border-top: 25px solid black;
+	background: url('../images/bg_headerTopGrunge.png') top center repeat-x;
+	background-color: #ffffff;
+	
+	> div {
+		margin-top: -26px;
+		background: url('../images/bg_headerTop.png') top center no-repeat;
+		padding: 26px 0 0 0;
+		
+		> div {
+			background: url('../images/bg_headerGradient.png') bottom center repeat-x;
+			
+			> div {
+				background: url('../images/bg_headerBottomGrunge.png') bottom center repeat-x;
+				border-bottom: 4px solid black;
+				
+				> div {
+					background: url('../images/bg_header.jpg') bottom center no-repeat;
+					margin: 0 auto 1px;
+				}
+			}
+		}
+	}
+}
