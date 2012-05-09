@@ -1,34 +1,22 @@
 /* @group hmenu */
-.moduletable_hmenu > ul {
-  margin: 0;
-  padding: 0; }
-
-.moduletable_hmenu > ul > li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  position: relative;
-  padding: 0 5px; }
-
-.moduletable_vmenu > ul > li > a,
-.moduletable_vmenu > ul > li > span {
-  display: block; }
-
-.moduletable_vmenu ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%; }
-
-/* /hmenu */
-/* @group vmenu */
-.moduletable_vmenu > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.moduletable_vmenu ul ul {
-  margin: 0.5em 0 1em 1em;
-  list-style: none; }
-
-/* /vmenu */
+.moduletable_hmenu {
+  font-family: "Trajan Pro";
+  font-size: 14px;
+  font-weight: bold; }
+  .moduletable_hmenu > ul {
+    margin: 0;
+    padding: 35px 0 15px;
+    border-bottom: 1px solid #d8d8d8; }
+    .moduletable_hmenu > ul > li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      position: relative;
+      padding: 0 0 0 50px; }
+      .moduletable_hmenu > ul > li:first-child {
+        padding-left: 0; }
+      .moduletable_hmenu > ul > li a {
+        color: #000; }
+        .moduletable_hmenu > ul > li a:hover {
+          color: #c00000;
+          text-decoration: none; }
