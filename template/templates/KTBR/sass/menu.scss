@@ -2,4 +2,34 @@
 @import "_mixins";
 
 /* @group hmenu */
+.moduletable_hmenu {
+	font-family: "Trajan Pro";
+	font-size: 14px;
+	font-weight: bold;
 	
+	> ul {
+		margin: 0;
+		padding: 35px 0 15px;
+		border-bottom: 1px solid #d8d8d8;
+		
+		> li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			position: relative;
+
+			padding: 0 0 0 50px;
+			&:first-child {
+				padding-left: 0;
+			}
+			
+			a {
+				color: #000;
+				&:hover {
+					color: $red;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
