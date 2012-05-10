@@ -468,7 +468,8 @@ button {
           margin: 0 auto 1px; }
 
 #body {
-  background: black url("../images/bg_body.jpg") top center no-repeat; }
+  background: black url("../images/bg_body.jpg") top center no-repeat;
+  padding: 0 0 30px 0; }
 
 #footer {
   background: url("../images/bg_footer.jpg") top center no-repeat; }
@@ -491,9 +492,12 @@ button {
 .moduletable.middle {
   float: left;
   width: 30.85106383%;
-  padding-left: 3.723404255%; }
+  padding-left: 3.723404255%;
+  font-size: 12px; }
   .moduletable.middle:first-child {
     padding-left: 0; }
+  .moduletable.middle img {
+    margin-right: 15px; }
 
 /* @group hmenu */
 .moduletable_hmenu {

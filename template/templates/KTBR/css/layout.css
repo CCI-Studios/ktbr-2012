@@ -25,7 +25,8 @@
           margin: 0 auto 1px; }
 
 #body {
-  background: black url("../images/bg_body.jpg") top center no-repeat; }
+  background: black url("../images/bg_body.jpg") top center no-repeat;
+  padding: 0 0 30px 0; }
 
 #footer {
   background: url("../images/bg_footer.jpg") top center no-repeat; }
