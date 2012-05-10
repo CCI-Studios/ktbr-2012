@@ -75,6 +75,7 @@ $typekit = null;
 			</div>
 			<div id="middle">
 				<jdoc:include type="modules" name="middle" style="xhtml" />
+				<div class="clear"></div>
 			</div>
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="xhtml" />
