@@ -6,11 +6,12 @@
 	font-family: "Trajan Pro";
 	font-size: 14px;
 	font-weight: bold;
+	z-index: 5;
 	
 	> ul {
 		margin: 0;
 		padding: 35px 0 15px;
-		border-bottom: 1px solid #d8d8d8;
+		background: url('../images/bg_menuBottomBorder.png') bottom center no-repeat;
 		
 		> li {
 			display: inline-block;
