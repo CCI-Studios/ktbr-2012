@@ -12,6 +12,17 @@
 		width: 45.744680851%;
 		font-size: 14px;
 		font-weight: bold;
+		z-index: 2;
+	}
+	
+	.home & img.posBotRight {
+		position: absolute;
+		bottom: 0;
+		right: -21px;
+		z-index: -1;
+	}
+}
+
 // middle mods
 
 .moduletable.middle {
