@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
 	background: url('../images/bg_headers.png') bottom center no-repeat;
 	padding: 10px 0;
+	
+	.home #top & {
+		margin-top: 0;
+		padding-top: 20px;
+	}
 }
 
 a, a:active, a:visited {
