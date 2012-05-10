@@ -26,6 +26,7 @@
 			
 			a {
 				color: #000;
+					z-index: 5;
 				&:hover {
 					color: $red;
 					text-decoration: none;
