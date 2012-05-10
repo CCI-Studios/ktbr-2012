@@ -12,5 +12,13 @@
 		width: 45.744680851%;
 		font-size: 14px;
 		font-weight: bold;
+// middle mods
+
+.moduletable.middle {
+	float: left;
+	width: 30.85106383%;
+	padding-left: 3.723404255%;
+	&:first-child {
+		padding-left: 0;
 	}
 }
