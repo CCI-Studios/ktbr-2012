@@ -2,11 +2,12 @@
 .moduletable_hmenu {
   font-family: "Trajan Pro";
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 5; }
   .moduletable_hmenu > ul {
     margin: 0;
     padding: 35px 0 15px;
-    border-bottom: 1px solid #d8d8d8; }
+    background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
     .moduletable_hmenu > ul > li {
       display: inline-block;
       *display: inline;
@@ -16,7 +17,8 @@
       .moduletable_hmenu > ul > li:first-child {
         padding-left: 0; }
       .moduletable_hmenu > ul > li a {
-        color: #000; }
+        color: #000;
+        z-index: 5; }
         .moduletable_hmenu > ul > li a:hover {
           color: #c00000;
           text-decoration: none; }

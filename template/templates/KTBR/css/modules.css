@@ -5,4 +5,17 @@
   .moduletable.masthead p {
     width: 45.744680851%;
     font-size: 14px;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
+  .home .moduletable.masthead img.posBotRight {
+    position: absolute;
+    bottom: 0;
+    right: -21px;
+    z-index: -1; }
+
+.moduletable.middle {
+  float: left;
+  width: 30.85106383%;
+  padding-left: 3.723404255%; }
+  .moduletable.middle:first-child {
+    padding-left: 0; }

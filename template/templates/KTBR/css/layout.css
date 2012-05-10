@@ -3,6 +3,9 @@
   width: 940px;
   padding: 0 10px;
   margin: 0 auto; }
+  #header .container {
+    position: relative;
+    z-index: 1; }
 
 #header {
   border-top: 25px solid black;
@@ -20,3 +23,9 @@
         #header > div > div > div > div {
           background: url("../images/bg_header.jpg") bottom center no-repeat;
           margin: 0 auto 1px; }
+
+#body {
+  background: black url("../images/bg_body.jpg") top center no-repeat; }
+
+#footer {
+  background: url("../images/bg_footer.jpg") top center no-repeat; }

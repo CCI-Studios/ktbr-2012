@@ -379,6 +379,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   background: url("../images/bg_headers.png") bottom center no-repeat;
   padding: 10px 0; }
+  .home #top h1, .home #top h2, .home #top h3, .home #top h4, .home #top h5, .home #top h6 {
+    margin-top: 0;
+    padding-top: 20px; }
 
 a, a:active, a:visited {
   color: #ffffff;
@@ -388,9 +391,12 @@ a:hover {
   color: #c00000;
   text-decoration: underline; }
 
+p {
+  font-weight: lighter; }
+
 h1 {
   font-size: 30px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.41);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   margin: 20px 0; }
 
 h2, h3 {
@@ -440,6 +446,9 @@ button {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto; }
+  #header .container {
+    position: relative;
+    z-index: 1; }
 
 #header {
   border-top: 25px solid black;
@@ -458,6 +467,12 @@ button {
           background: url("../images/bg_header.jpg") bottom center no-repeat;
           margin: 0 auto 1px; }
 
+#body {
+  background: black url("../images/bg_body.jpg") top center no-repeat; }
+
+#footer {
+  background: url("../images/bg_footer.jpg") top center no-repeat; }
+
 /* @group modules */
 .moduletable.masthead {
   padding: 30px 0 50px;
@@ -465,17 +480,31 @@ button {
   .moduletable.masthead p {
     width: 45.744680851%;
     font-size: 14px;
-    font-weight: bold; }
+    font-weight: bold;
+    z-index: 2; }
+  .home .moduletable.masthead img.posBotRight {
+    position: absolute;
+    bottom: 0;
+    right: -21px;
+    z-index: -1; }
+
+.moduletable.middle {
+  float: left;
+  width: 30.85106383%;
+  padding-left: 3.723404255%; }
+  .moduletable.middle:first-child {
+    padding-left: 0; }
 
 /* @group hmenu */
 .moduletable_hmenu {
   font-family: "Trajan Pro";
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 5; }
   .moduletable_hmenu > ul {
     margin: 0;
     padding: 35px 0 15px;
-    border-bottom: 1px solid #d8d8d8; }
+    background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
     .moduletable_hmenu > ul > li {
       display: inline-block;
       *display: inline;
@@ -485,7 +514,8 @@ button {
       .moduletable_hmenu > ul > li:first-child {
         padding-left: 0; }
       .moduletable_hmenu > ul > li a {
-        color: #000; }
+        color: #000;
+        z-index: 5; }
         .moduletable_hmenu > ul > li a:hover {
           color: #c00000;
           text-decoration: none; }
