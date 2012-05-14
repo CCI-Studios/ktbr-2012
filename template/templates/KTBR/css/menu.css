@@ -6,19 +6,39 @@
   z-index: 5; }
   .moduletable_hmenu > ul {
     margin: 0;
-    padding: 35px 0 15px;
-    background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
+    padding: 0 5px; }
     .moduletable_hmenu > ul > li {
       display: inline-block;
       *display: inline;
       *zoom: 1;
       position: relative;
-      padding: 0 0 0 50px; }
-      .moduletable_hmenu > ul > li:first-child {
-        padding-left: 0; }
-      .moduletable_hmenu > ul > li a {
-        color: #000;
-        z-index: 5; }
-        .moduletable_hmenu > ul > li a:hover {
-          color: #c00000;
-          text-decoration: none; }
+      padding: 0 5px; }
+
+.moduletable_hmenu.primary > ul {
+  padding: 35px 0 15px;
+  background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
+  .moduletable_hmenu.primary > ul li {
+    padding: 0 0 0 50px; }
+    .moduletable_hmenu.primary > ul li:first-child {
+      padding-left: 0; }
+    .moduletable_hmenu.primary > ul li a {
+      color: #000;
+      z-index: 5; }
+      .moduletable_hmenu.primary > ul li a:hover {
+        color: #c00000;
+        text-decoration: none; }
+
+.moduletable_hmenu.secondary {
+  font-family: "Copperplate";
+  font-weight: 100;
+  text-align: center;
+  line-height: 12px;
+  padding: 15px 0;
+  background: url("../images/bg_footerTopGrunge.png") bottom center repeat-x; }
+  .moduletable_hmenu.secondary > ul li {
+    border-left: 1px solid #fff;
+    padding: 0 15px; }
+    .moduletable_hmenu.secondary > ul li:first-child {
+      border-left: none; }
+    .moduletable_hmenu.secondary > ul li a:hover {
+      text-decoration: none; }

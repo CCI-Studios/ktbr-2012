@@ -8,14 +8,11 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Copperplate Gothic Light";
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   color: #ffffff;
   background: url("../images/bg_headers.png") bottom center no-repeat;
   padding: 10px 0; }
-  .home #top h1, .home #top h2, .home #top h3, .home #top h4, .home #top h5, .home #top h6 {
-    margin-top: 0;
-    padding-top: 20px; }
 
 a, a:active, a:visited {
   color: #ffffff;
@@ -27,11 +24,14 @@ a:hover {
 
 p {
   font-weight: lighter; }
+  p:first-child {
+    margin-top: 0; }
 
 h1 {
   font-size: 30px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
-  margin: 20px 0; }
+  margin: 0px 0 20px;
+  padding: 20px 0 10px; }
 
 h2, h3 {
   font-size: 14px; }

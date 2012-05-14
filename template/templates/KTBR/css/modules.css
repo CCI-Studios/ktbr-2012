@@ -20,5 +20,24 @@
   font-size: 12px; }
   .moduletable.middle:first-child {
     padding-left: 0; }
-  .moduletable.middle img {
-    margin-right: 15px; }
+.moduletable.sidebar {
+  padding: 10px 0 0 0; }
+  .moduletable.sidebar:first-child {
+    padding: 0; }
+    .moduletable.sidebar:first-child h3 {
+      margin-top: 0;
+      padding-top: 0; }
+
+.moduletable.middle img,
+.moduletable.sidebar img {
+  margin-right: 15px; }
+
+.moduletable.bottom h3 {
+  margin-bottom: 30px; }
+.moduletable.bottom img {
+  margin-left: 30px; }
+  .moduletable.bottom img:first-child {
+    margin-left: 0; }
+
+.moduletable.social a {
+  padding: 0 10px; }

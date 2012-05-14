@@ -20,3 +20,11 @@
   background: #c00000;
   color: #fff;
   text-shadow: none; }
+
+.learnMore {
+  font-family: "Copperplate Gothic Light";
+  font-size: inherit;
+  padding-left: 13px;
+  background: url("../images/arrow.png") center left no-repeat; }
+  .learnMore:hover {
+    text-decoration: none; }
