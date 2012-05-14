@@ -37,6 +37,23 @@
 	img {
 		margin-right: 15px;
 	}
+}
+
+// bottom mods
+
+.moduletable.bottom {
+	h3 {
+		margin-bottom: 30px;
+	}
+	
+	img {
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
 // copyright
 
 .moduletable.social {
