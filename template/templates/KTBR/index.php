@@ -66,6 +66,7 @@ $typekit = null;
 		<div id="body"><div class="container">
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="xhtml" />
+				<div class="clear"></div>
 			</div>
 			<div id="comp">
 				<jdoc:include type="component" />
