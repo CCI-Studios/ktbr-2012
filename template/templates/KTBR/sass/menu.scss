@@ -10,14 +10,19 @@
 	
 	> ul {
 		margin: 0;
-		padding: 35px 0 15px;
-		background: url('../images/bg_menuBottomBorder.png') bottom center no-repeat;
+		padding: 0 5px;
 		
 		> li {
 			display: inline-block;
 			*display: inline;
 			*zoom: 1;
 			position: relative;
+			padding: 0 5px;
+			
+
+		}
+	}
+}
 
 			padding: 0 0 0 50px;
 			&:first-child {
