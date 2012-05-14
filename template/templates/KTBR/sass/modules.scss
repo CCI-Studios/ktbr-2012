@@ -25,15 +25,31 @@
 
 // middle mods
 
-.moduletable.middle {
-	float: left;
-	width: 30.85106383%;
-	padding-left: 3.723404255%;
-	font-size: 12px;
-	&:first-child {
-		padding-left: 0;
+.moduletable {
+	&.middle {
+		float: left;
+		width: 30.85106383%;
+		padding-left: 3.723404255%;
+		font-size: 12px;
+		&:first-child {
+			padding-left: 0;
+		}
 	}
 	
+	&.sidebar {
+		padding: 10px 0 0 0;
+		&:first-child {
+			padding: 0;
+			h3 {
+				margin-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+.moduletable.middle,
+.moduletable.sidebar {
 	img {
 		margin-right: 15px;
 	}
