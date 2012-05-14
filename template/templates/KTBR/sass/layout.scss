@@ -34,6 +34,10 @@
 				> div {
 					background: url('../images/bg_header.jpg') bottom center no-repeat;
 					margin: 0 auto 1px;
+					
+					> div {
+						background: url('../images/bg_headerBottom.png') center 102% no-repeat;
+					}
 				}
 			}
 		}
