@@ -30,6 +30,9 @@ a:hover {
 
 p {
 	font-weight: lighter;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 h1 {
