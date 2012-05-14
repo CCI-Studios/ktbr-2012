@@ -58,10 +58,10 @@ $typekit = null;
 
 	<div id="wrapper">
 		
-		<div id="header"><div><div><div><div><div class="container">
+		<div id="header"><div><div><div><div><div><div class="container">
 			<jdoc:include type="modules" name="header" style="xhtml" />
 			<div class="clear"></div>
-		</div></div></div></div></div></div>
+		</div></div></div></div></div></div></div>
 		
 		<div id="body"><div class="container">
 			<div id="top">
