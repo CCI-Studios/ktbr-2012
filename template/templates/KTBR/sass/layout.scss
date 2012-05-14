@@ -70,4 +70,15 @@
 #footer {
 	background-color: #000;
 }
+
+#copyright {
+	background: $red url('../images/bg_footer.jpg') top center no-repeat;
+	padding: 15px 0;
+	font-size: 9px;
+	line-height: 2em;
+	
+	a:hover {
+		color: black;
+		text-decoration: none;
+	}
 }
