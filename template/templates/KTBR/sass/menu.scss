@@ -46,3 +46,26 @@
 		}
 	}
 }
+
+.moduletable_hmenu.secondary {
+	font-family: "Copperplate";
+	font-weight: 100;
+	text-align: center;
+	line-height: 12px;
+	padding: 15px 0;
+	background: url('../images/bg_footerTopGrunge.png') bottom center repeat-x;
+	
+	> ul {
+		li {
+			border-left: 1px solid #fff;
+			padding: 0 15px;
+			&:first-child {
+				border-left: none;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
