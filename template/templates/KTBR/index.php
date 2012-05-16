@@ -71,9 +71,11 @@ $typekit = null;
 			<div id="comp">
 				<jdoc:include type="component" />
 			</div>
+			<?php if ($this->countModules('sidebar')): ?>
 			<div id="sidebar">
 				<jdoc:include type="modules" name="sidebar" style="xhtml" />
 			</div>
+			<?php endif; ?>
 			<div id="middle">
 				<jdoc:include type="modules" name="middle" style="xhtml" />
 				<div class="clear"></div>
