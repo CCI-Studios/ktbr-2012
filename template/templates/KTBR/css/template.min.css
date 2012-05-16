@@ -531,8 +531,8 @@ button {
 
 .moduletable.middle {
   float: left;
-  width: 30.85106383%;
-  padding-left: 3.723404255%;
+  width: 290px;
+  padding-left: 35px;
   font-size: 12px; }
   .moduletable.middle:first-child {
     padding-left: 0; }
@@ -544,6 +544,9 @@ button {
       margin-top: 0;
       padding-top: 0; }
 
+.moduletable.middle p,
+.moduletable.sidebar p {
+  padding-left: 66px; }
 .moduletable.middle img,
 .moduletable.sidebar img {
   margin-right: 15px; }
