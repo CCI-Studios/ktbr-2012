@@ -12,6 +12,13 @@
 		position: relative;
 		z-index: 1;
 	}
+
+	#body & {
+		padding-top: 20px;
+		.home & {
+			padding-top: 0;
+		}
+	}
 }
 
 #header {
