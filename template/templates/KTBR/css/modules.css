@@ -1,6 +1,6 @@
 /* @group modules */
 .moduletable.masthead {
-  padding: 30px 0 50px;
+  padding: 30px 0;
   color: black; }
   .moduletable.masthead p {
     width: 45.744680851%;
@@ -12,6 +12,16 @@
     bottom: 0;
     right: -21px;
     z-index: -1; }
+  .home .moduletable.masthead {
+    padding-bottom: 30px; }
+
+.moduletable.socialHeader {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: auto; }
+  .moduletable.socialHeader a {
+    padding: 0 10px; }
 
 .moduletable.middle {
   float: left;
@@ -39,5 +49,5 @@
   .moduletable.bottom img:first-child {
     margin-left: 0; }
 
-.moduletable.social a {
+.moduletable.socialFooter a {
   padding: 0 10px; }

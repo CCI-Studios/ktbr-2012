@@ -449,6 +449,10 @@ button {
   #header .container {
     position: relative;
     z-index: 1; }
+  #body .container {
+    padding-top: 20px; }
+    .home #body .container {
+      padding-top: 0; }
 
 #header {
   border-top: 25px solid black;
@@ -461,13 +465,13 @@ button {
     #header > div > div {
       background: url("../images/bg_headerGradient.png") bottom center repeat-x; }
       #header > div > div > div {
-        background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
-        border-bottom: 4px solid black; }
+        background: url("../images/bg_header.jpg") bottom center no-repeat;
+        margin: 0 auto 0px; }
         #header > div > div > div > div {
-          background: url("../images/bg_header.jpg") bottom center no-repeat;
-          margin: 0 auto 1px; }
-          #header > div > div > div > div > div {
-            background: url("../images/bg_headerBottom.png") center 102% no-repeat; }
+          background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
+          border-bottom: 4px solid black; }
+          #header > div > div > div > div .container {
+            background: url("../images/bg_headerBottom.png") bottom right no-repeat; }
 
 #body {
   background: black url("../images/bg_body.jpg") top center no-repeat;
@@ -494,6 +498,7 @@ button {
   background: #c00000 url("../images/bg_footer.jpg") top center no-repeat;
   padding: 15px 0;
   font-size: 9px;
+  font-weight: lighter;
   line-height: 2em; }
   #copyright a:hover {
     color: black;
@@ -501,7 +506,7 @@ button {
 
 /* @group modules */
 .moduletable.masthead {
-  padding: 30px 0 50px;
+  padding: 30px 0;
   color: black; }
   .moduletable.masthead p {
     width: 45.744680851%;
@@ -513,6 +518,16 @@ button {
     bottom: 0;
     right: -21px;
     z-index: -1; }
+  .home .moduletable.masthead {
+    padding-bottom: 30px; }
+
+.moduletable.socialHeader {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: auto; }
+  .moduletable.socialHeader a {
+    padding: 0 10px; }
 
 .moduletable.middle {
   float: left;
@@ -540,7 +555,7 @@ button {
   .moduletable.bottom img:first-child {
     margin-left: 0; }
 
-.moduletable.social a {
+.moduletable.socialFooter a {
   padding: 0 10px; }
 
 /* @group hmenu */
