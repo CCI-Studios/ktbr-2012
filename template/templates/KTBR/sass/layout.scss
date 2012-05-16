@@ -35,15 +35,15 @@
 			background: url('../images/bg_headerGradient.png') bottom center repeat-x;
 			
 			> div {
-				background: url('../images/bg_headerBottomGrunge.png') bottom center repeat-x;
-				border-bottom: 4px solid black;
+				background: url('../images/bg_header.jpg') bottom center no-repeat;
+				margin: 0 auto 0px;
 				
 				> div {
-					background: url('../images/bg_header.jpg') bottom center no-repeat;
-					margin: 0 auto 1px;
+					background: url('../images/bg_headerBottomGrunge.png') bottom center repeat-x;
+					border-bottom: 4px solid black;
 					
-					> div {
-						background: url('../images/bg_headerBottom.png') center 102% no-repeat;
+					.container {
+						background: url('../images/bg_headerBottom.png') bottom right no-repeat;
 					}
 				}
 			}
