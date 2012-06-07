@@ -37,6 +37,7 @@
 			> div {
 				background: url('../images/bg_header.jpg') bottom center no-repeat;
 				margin: 0 auto 0px;
+				.home & {background: url('../images/bg_headerHome.jpg') bottom center no-repeat;}
 				
 				> div {
 					background: url('../images/bg_headerBottomGrunge.png') bottom center repeat-x;
