@@ -13,9 +13,11 @@
 
 #header {
   border-top: 25px solid black;
-  background: url("../images/bg_headerTop.png") top center no-repeat;
+  background: url("../images/bg_headerTop.png") top center repeat-x;
   background-color: #ffffff;
-  margin-top: -25px; }
+  margin-top: -25px;
+  position: relative;
+  *zoom: 1; }
   #header > div {
     margin-top: 25px;
     background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
@@ -29,7 +31,9 @@
           background: url("../images/bg_headerHome.jpg") bottom center no-repeat; }
         #header > div > div > div > div {
           background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
-          border-bottom: 4px solid black; }
+          border-bottom: 4px solid black;
+          position: relative;
+          *zoom: 1; }
           #header > div > div > div > div .headerBottomImg {
             position: absolute;
             right: 0;
@@ -58,11 +62,13 @@
   background-color: #000; }
 
 #copyright {
-  background: #c00000 url("../images/bg_footer.jpg") top center no-repeat;
-  padding: 15px 0;
+  background: url("../images/bg_footerRepeat.png") top center repeat-x;
   font-size: 9px;
   font-weight: lighter;
   line-height: 2em; }
+  #copyright > div {
+    background: url("../images/bg_footer.jpg") top center no-repeat;
+    padding: 15px 0; }
   #copyright a:hover {
     color: black;
     text-decoration: none; }
