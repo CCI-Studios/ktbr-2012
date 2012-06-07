@@ -84,11 +84,15 @@
 }
 
 #copyright {
-	background: $red url('../images/bg_footer.jpg') top center no-repeat;
-	padding: 15px 0;
+	background: url('../images/bg_footerRepeat.png') top center repeat-x;
 	font-size: 9px;
 	font-weight: lighter;
 	line-height: 2em;
+	
+	> div {
+		background: url('../images/bg_footer.jpg') top center no-repeat;
+		padding: 15px 0;
+	}
 	
 	a:hover {
 		color: black;
