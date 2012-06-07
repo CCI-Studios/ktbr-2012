@@ -25,23 +25,22 @@
 }
 
 .moduletable_hmenu.primary {
-	> ul {
-		padding: 35px 0 15px;
-		background: url('../images/bg_menuBottomBorder.png') bottom center no-repeat;
+	padding: 35px 0 15px;
+	position: relative;
+	z-index: 10;
 		
-		li {
-			padding: 0 0 0 50px;
-			&:first-child {
-				padding-left: 0;
-			}
-			
-			a {
-				color: #000;
-				z-index: 5;
-				&:hover {
-					color: $red;
-					text-decoration: none;
-				}
+	li {
+		padding: 0 0 0 50px;
+		&:first-child {
+			padding-left: 0;
+		}
+		
+		a {
+			color: #000;
+			z-index: 5;
+			&:hover {
+				color: $red;
+				text-decoration: none;
 			}
 		}
 	}
