@@ -90,12 +90,12 @@ $typekit = null;
 		
 		<div id="footer">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-			<div id="copyright"><div class="container">
+			<div id="copyright"><div><div class="container">
 				<span class="left">&copy; <?php echo date('Y') ?> Keep The Ball Rolling. All Rights Reserved. <br />
 					Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></span>
 				<jdoc:include type="modules" name="copyright" style="xhtml" />
 				<div class="clear"></div>
-			</div></div>
+			</div></div></div>
 		</div>
 		
 	</div>
