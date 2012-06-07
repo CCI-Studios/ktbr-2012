@@ -456,22 +456,28 @@ button {
 
 #header {
   border-top: 25px solid black;
-  background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
-  background-color: #ffffff; }
+  background: url("../images/bg_headerTop.png") top center no-repeat;
+  background-color: #ffffff;
+  margin-top: -25px; }
   #header > div {
-    margin-top: -26px;
-    background: url("../images/bg_headerTop.png") top center no-repeat;
-    padding: 26px 0 0 0; }
+    margin-top: 25px;
+    background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
+    padding: 1px 0 0 0; }
     #header > div > div {
       background: url("../images/bg_headerGradient.png") bottom center repeat-x; }
       #header > div > div > div {
         background: url("../images/bg_header.jpg") bottom center no-repeat;
         margin: 0 auto 0px; }
+        .home #header > div > div > div {
+          background: url("../images/bg_headerHome.jpg") bottom center no-repeat; }
         #header > div > div > div > div {
           background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
           border-bottom: 4px solid black; }
-          #header > div > div > div > div .container {
-            background: url("../images/bg_headerBottom.png") bottom right no-repeat; }
+          #header > div > div > div > div .headerBottomImg {
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            z-index: 5; }
 
 #body {
   background: black url("../images/bg_body.jpg") top center no-repeat;
@@ -507,25 +513,26 @@ button {
 /* @group modules */
 .moduletable.masthead {
   padding: 30px 0;
-  color: black; }
+  color: black;
+  border-top: 1px solid #d8d8d8;
+  z-index: 2; }
   .moduletable.masthead p {
     width: 45.744680851%;
     font-size: 14px;
     font-weight: bold;
     z-index: 2; }
-  .home .moduletable.masthead img.posBotRight {
+  .moduletable.masthead img.bottomRight {
     position: absolute;
     bottom: 0;
-    right: -21px;
-    z-index: -1; }
-  .home .moduletable.masthead {
-    padding-bottom: 30px; }
+    right: 21px;
+    z-index: 2; }
 
 .moduletable.socialHeader {
   position: absolute;
   top: 30px;
   right: 0;
-  width: auto; }
+  width: auto;
+  z-index: 10; }
   .moduletable.socialHeader a {
     padding: 0 10px; }
 
@@ -577,17 +584,18 @@ button {
       position: relative;
       padding: 0 5px; }
 
-.moduletable_hmenu.primary > ul {
+.moduletable_hmenu.primary {
   padding: 35px 0 15px;
-  background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
-  .moduletable_hmenu.primary > ul li {
+  position: relative;
+  z-index: 10; }
+  .moduletable_hmenu.primary li {
     padding: 0 0 0 50px; }
-    .moduletable_hmenu.primary > ul li:first-child {
+    .moduletable_hmenu.primary li:first-child {
       padding-left: 0; }
-    .moduletable_hmenu.primary > ul li a {
+    .moduletable_hmenu.primary li a {
       color: #000;
       z-index: 5; }
-      .moduletable_hmenu.primary > ul li a:hover {
+      .moduletable_hmenu.primary li a:hover {
         color: #c00000;
         text-decoration: none; }
 

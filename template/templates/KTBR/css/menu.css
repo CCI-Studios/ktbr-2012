@@ -14,17 +14,18 @@
       position: relative;
       padding: 0 5px; }
 
-.moduletable_hmenu.primary > ul {
+.moduletable_hmenu.primary {
   padding: 35px 0 15px;
-  background: url("../images/bg_menuBottomBorder.png") bottom center no-repeat; }
-  .moduletable_hmenu.primary > ul li {
+  position: relative;
+  z-index: 10; }
+  .moduletable_hmenu.primary li {
     padding: 0 0 0 50px; }
-    .moduletable_hmenu.primary > ul li:first-child {
+    .moduletable_hmenu.primary li:first-child {
       padding-left: 0; }
-    .moduletable_hmenu.primary > ul li a {
+    .moduletable_hmenu.primary li a {
       color: #000;
       z-index: 5; }
-      .moduletable_hmenu.primary > ul li a:hover {
+      .moduletable_hmenu.primary li a:hover {
         color: #c00000;
         text-decoration: none; }
 

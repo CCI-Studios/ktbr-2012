@@ -13,22 +13,28 @@
 
 #header {
   border-top: 25px solid black;
-  background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
-  background-color: #ffffff; }
+  background: url("../images/bg_headerTop.png") top center no-repeat;
+  background-color: #ffffff;
+  margin-top: -25px; }
   #header > div {
-    margin-top: -26px;
-    background: url("../images/bg_headerTop.png") top center no-repeat;
-    padding: 26px 0 0 0; }
+    margin-top: 25px;
+    background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
+    padding: 1px 0 0 0; }
     #header > div > div {
       background: url("../images/bg_headerGradient.png") bottom center repeat-x; }
       #header > div > div > div {
         background: url("../images/bg_header.jpg") bottom center no-repeat;
         margin: 0 auto 0px; }
+        .home #header > div > div > div {
+          background: url("../images/bg_headerHome.jpg") bottom center no-repeat; }
         #header > div > div > div > div {
           background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
           border-bottom: 4px solid black; }
-          #header > div > div > div > div .container {
-            background: url("../images/bg_headerBottom.png") bottom right no-repeat; }
+          #header > div > div > div > div .headerBottomImg {
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            z-index: 5; }
 
 #body {
   background: black url("../images/bg_body.jpg") top center no-repeat;
