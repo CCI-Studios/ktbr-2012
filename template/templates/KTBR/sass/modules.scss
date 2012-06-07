@@ -22,12 +22,8 @@
 	img.bottomRight {
 		position: absolute;
 		bottom: 0;
-		right: -21px;
-		z-index: -1;
-	}
-	
-	.home & {
-		padding-bottom: 30px;
+		right: 21px;
+		z-index: 2;
 	}
 }
 
