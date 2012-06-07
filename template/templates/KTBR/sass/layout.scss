@@ -44,6 +44,11 @@
 					
 					.container {
 						background: url('../images/bg_headerBottom.png') bottom right no-repeat;
+					.headerBottomImg {
+						position: absolute;
+						right: 0;
+						bottom: -3px;
+						z-index: 5;
 					}
 				}
 			}
