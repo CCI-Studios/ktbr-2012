@@ -58,12 +58,15 @@ $typekit = null;
 
 	<div id="wrapper">
 		
-		<div id="header"><div><div><div><div><div><div class="container">
+		<div id="header"><div><div><div><div><div class="container">
 			<jdoc:include type="modules" name="header" style="xhtml" />
+			<div class="headerBottomImg">
+				<img src="../templates/KTBR/images/bg_headerBottom.png" width="640" height="41" alt="Bg HeaderBottom">
+			</div>
 			<div class="clear"></div>
-		</div></div></div></div></div></div></div>
+		</div></div></div></div></div></div>
 		
-		<div id="body"><div class="container">
+		<div id="body"><div><div class="container">
 			<div id="top">
 				<jdoc:include type="modules" name="top" style="xhtml" />
 				<div class="clear"></div>
@@ -83,7 +86,7 @@ $typekit = null;
 			<div id="bottom">
 				<jdoc:include type="modules" name="bottom" style="xhtml" />
 			</div>
-		</div></div>
+		</div></div></div>
 		
 		<div id="footer">
 			<jdoc:include type="modules" name="footer" style="xhtml" />
