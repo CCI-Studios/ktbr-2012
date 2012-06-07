@@ -26,6 +26,8 @@
 	background: url('../images/bg_headerTop.png') top center repeat-x;
 	background-color: #ffffff;
 	margin-top: -25px;
+	position: relative;
+	*zoom: 1; //fix for IE7
 	
 	> div {
 		margin-top: 25px;
@@ -43,6 +45,8 @@
 				> div {
 					background: url('../images/bg_headerBottomGrunge.png') bottom center repeat-x;
 					border-bottom: 4px solid black;
+					position: relative;
+					*zoom: 1; //fix for IE7
 					
 					.headerBottomImg {
 						position: absolute;
