@@ -50,6 +50,11 @@
   padding: 0 40px 0 0; }
   .home #comp {
     width: 100%; }
+  .supporters #comp {
+    text-align: center; }
+    .supporters #comp img {
+      vertical-align: middle;
+      margin: 0 11px 40px; }
 
 #sidebar {
   width: 290px;
