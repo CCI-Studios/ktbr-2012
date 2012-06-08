@@ -72,7 +72,18 @@
 	.home & {
 		width: 100%;
 	}
+	
+	.supporters & {
+		text-align: center;
+		
+		img {
+			vertical-align: middle;
+			margin: 0 11px 40px;
+		}
+	}
 }
+
+
 
 #sidebar {
 	width: 290px;
