@@ -378,7 +378,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #ffffff;
   background: url("../images/bg_headers.png") bottom center no-repeat;
-  padding: 10px 0; }
+  padding: 10px 0;
+  position: relative;
+  *zoom: 1; }
 
 a, a:active, a:visited {
   color: #ffffff;
