@@ -369,7 +369,7 @@ body, select, input, textarea {
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: #650000; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -516,7 +516,8 @@ button {
   line-height: 2em; }
   #copyright > div {
     background: url("../images/bg_footer.jpg") top center no-repeat;
-    padding: 15px 0; }
+    padding: 15px 0;
+    height: 231px; }
   #copyright a:hover {
     color: black;
     text-decoration: none; }
