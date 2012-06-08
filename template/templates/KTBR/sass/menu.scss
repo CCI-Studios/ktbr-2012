@@ -10,14 +10,14 @@
 	
 	> ul {
 		margin: 0;
-		padding: 0 5px;
+		padding: 0px;
 		
 		> li {
 			display: inline-block;
 			*display: inline;
 			*zoom: 1;
 			position: relative;
-			padding: 0;
+			padding: 0 5px;
 			
 
 		}

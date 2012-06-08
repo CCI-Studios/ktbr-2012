@@ -598,13 +598,13 @@ button {
   z-index: 5; }
   .moduletable_hmenu > ul {
     margin: 0;
-    padding: 0 5px; }
+    padding: 0px; }
     .moduletable_hmenu > ul > li {
       display: inline-block;
       *display: inline;
       *zoom: 1;
       position: relative;
-      padding: 0; }
+      padding: 0 5px; }
 
 .moduletable_hmenu.primary {
   padding: 35px 0 15px;
