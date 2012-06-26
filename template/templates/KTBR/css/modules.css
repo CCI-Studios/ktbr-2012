@@ -27,13 +27,16 @@
 .media-block .media {
   float: left;
   width: 17.586206897%;
-  margin-right: 5.172413793%; }
-.media-block .learn-more {
-  margin-left: 22.75862069%;
-  float: left;
-  clear: both; }
+  margin: 0 5.172413793% 10px 0;
+  text-align: center; }
 .media-block .media + .content {
   padding-left: 22.75862069%; }
+.media-block.right .media {
+  float: right;
+  margin: 0 0 10px 5.172413793%; }
+.media-block.right .content {
+  padding-left: 0;
+  margin-top: 0; }
 
 .moduletable.feed ul {
   padding: 0;
@@ -64,21 +67,63 @@
   .moduletable.sidebar:first-child {
     padding: 0; }
     .moduletable.sidebar:first-child h3 {
-      margin-top: 0;
       padding-top: 0; }
+  .moduletable.sidebar h3 {
+    margin-top: 0; }
 
-.moduletable.bottom h3 {
-  margin-bottom: 30px; }
-.moduletable.bottom a:hover {
-  text-decoration: none; }
+.moduletable.sponsors > div {
+  margin-top: 30px;
+  text-align: center; }
+.moduletable.sponsors a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 1.223404255% 1em; }
+  .moduletable.sponsors a:hover {
+    text-decoration: none; }
 
 .moduletable.socialFooter a {
   padding: 0 10px; }
 
+@media only screen and (max-width: 1024px) {
+  .moduletable.sponsors a {
+    margin: 0 5.319148936% 1em; } }
+@media only screen and (max-width: 768px) {
+  .moduletable.sidebar {
+    float: left;
+    width: 30.85106383%;
+    padding: 0 0 0 3.723404255%; }
+    .moduletable.sidebar h3 {
+      padding-top: 0; } }
 @media only screen and (max-width: 480px) {
-  .moduletable.bottom .custom {
+  .moduletable.masthead p {
+    width: 100%; }
+
+  .moduletable.middle, .moduletable.sidebar {
+    float: none;
+    width: 100%;
+    padding-left: 0; }
+
+  .moduletable.sponsors .custom {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
-    .moduletable.bottom .custom > * {
-      width: 940px; } }
+    .moduletable.sponsors .custom > * {
+      width: 940px; }
+  .moduletable.sponsors a {
+    margin: 0 1.223404255% 1em; } }
+html.ie7 .moduletable.masthead p, html.ie8 .moduletable.masthead p {
+  width: 45.744680851%; }
+html.ie7 .moduletable.middle, html.ie8 .moduletable.middle {
+  float: left;
+  width: 30.85106383%;
+  padding-left: 3.723404255%; }
+html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
+  padding: 10px 0 0 0; }
+  html.ie7 .moduletable.sidebar:first-child, html.ie8 .moduletable.sidebar:first-child {
+    padding: 0; }
+    html.ie7 .moduletable.sidebar:first-child h3, html.ie8 .moduletable.sidebar:first-child h3 {
+      margin-top: 0;
+      padding-top: 0; }
+  html.ie7 .moduletable.sidebar h3, html.ie8 .moduletable.sidebar h3 {
+    padding-top: 10px; }
