@@ -41,18 +41,22 @@
 
 // middle mods
 
-.moduletable.middle,
-.moduletable.sidebar {
-	h3 a:hover {
-		text-decoration: none;
+.media-block {
+	
+	.media {
+		float: left;
+		width: 17.586206897%; //51/290
+		margin-right: 5.172413793%; //15/290
 	}
 	
-	p {
-		padding-left: 66px;
+	.learn-more {
+		margin-left: 22.75862069%; //66/290
+		float: left;
+		clear: both;
 	}
 	
-	img {
-		margin-right: 15px;
+	.media + .content {
+		padding-left: 22.75862069%; //66/290
 	}
 }
 
