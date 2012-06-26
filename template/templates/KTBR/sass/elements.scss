@@ -42,6 +42,12 @@ h1 {
 	text-shadow: 3px 3px 3px rgba(black, .25);
 	margin: 0px 0 20px;
 	padding: 20px 0 10px;
+img {
+	max-width: 100%;
+
+	.ie7 &, .ie8 & {
+		max-width: auto;
+	}
 }
 
 h2, h3 {
