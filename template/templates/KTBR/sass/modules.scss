@@ -137,6 +137,20 @@
 @media only screen and (max-width: 480px) {
 	a{} //TODO remove
 	
+	.moduletable.bottom {
+		
+		.custom {
+			width: 100%;
+			overflow: scroll;
+			-webkit-overflow-scrolling: touch;
+			
+			> * {
+				width: 940px;
+			}		
+		}
+	}
+}
+
 //ie
 html.ie7, html.ie8 {
 
