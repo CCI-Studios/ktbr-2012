@@ -193,6 +193,17 @@
 			width: 100%;
 		}
 	}
+
+	.moduletable {
+		&.middle,
+		&.sidebar {
+			float: none;
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+	
+	.moduletable.sponsors {
 		
 		.custom {
 			width: 100%;
