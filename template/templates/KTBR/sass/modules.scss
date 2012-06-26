@@ -223,5 +223,34 @@
 
 //ie
 html.ie7, html.ie8 {
+	
+	.moduletable.masthead {
 
+		p {
+			width: 45.744680851%;
+		}
+	}
+	
+	.moduletable {
+		&.middle {
+			float: left;
+			width: 30.85106383%; //290/940
+			padding-left: 3.723404255%; //35/940
+		}
+		
+		&.sidebar {
+			padding: 10px 0 0 0;
+			&:first-child {
+				padding: 0;
+				h3 {
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+			
+			h3 {
+				padding-top: 10px;
+			}
+		}
+	}
 }
