@@ -125,4 +125,10 @@
 
 }
 
+//ie
+html.ie7, html.ie8 {
+	.container {
+		width: 940px;
+		padding: 0 10px;
+	}
 }
