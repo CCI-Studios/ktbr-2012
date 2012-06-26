@@ -17,8 +17,6 @@
 			*zoom: 1;
 			position: relative;
 			padding: 0 5px;
-			
-
 		}
 	}
 }
@@ -46,10 +44,9 @@
 }
 
 .moduletable_hmenu.secondary {
-	font-family: "Trajan Pro";
+	@include typekit;
 	font-size: 10px;
 	line-height: 10px;
-	font-weight: 100;
 	text-align: center;
 	padding: 15px 0;
 	background: url('../images/bg_footerTopGrunge.png') bottom center repeat-x;
