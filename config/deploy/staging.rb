@@ -1,5 +1,5 @@
 # repository info
-set :branch, "master"
+set :branch, "development"
 
 # This may be the same as your `Web` server
 role :app, "ccistudios.com"
@@ -8,3 +8,4 @@ role :app, "ccistudios.com"
 set :deploy_to, "/home/ktbr/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
 set :extensions, %w[public template]
+
