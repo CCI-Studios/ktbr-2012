@@ -129,12 +129,23 @@
 
 // bottom mods
 
-.moduletable.bottom {
-	h3 {
-		margin-bottom: 30px;
+.moduletable.sponsors {
+
+	> div {
+		margin-top: 30px;
+		text-align: center;
 	}
 	
-	a:hover {text-decoration: none;}
+	a {	
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin: 0 1.223404255% 1em;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 // copyright
