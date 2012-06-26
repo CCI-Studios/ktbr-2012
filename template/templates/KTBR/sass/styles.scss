@@ -21,3 +21,16 @@
 		text-decoration: none;
 	}
 }
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	a{} //TODO remove
+}
+
+//ie
+html.ie7, html.ie8 {
+
+}
