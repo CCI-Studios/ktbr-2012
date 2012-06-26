@@ -156,8 +156,16 @@
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
+	a{} //TODO remove
+	
+	.moduletable.sponsors {
 
+		a {	
+			margin: 0 5.319148936% 1em;
+		}
+	}
+}
 }
 
 @media only screen and (max-width: 480px) {
