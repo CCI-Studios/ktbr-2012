@@ -166,6 +166,22 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	a{} //TODO remove
+	
+	.moduletable {
+
+		&.sidebar {
+			float: left;
+			width: 30.85106383%; //290/940
+			padding: 0 0 0 3.723404255%; //35/940
+			
+			h3 {
+				padding-top: 0;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 480px) {
