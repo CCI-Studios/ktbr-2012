@@ -26,7 +26,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 
 JHTML::_('behavior.mootools');
 $analytics = "UA-32507449-1";
-$typekit = null;
+$typekit = "onv1ipz";
 ?>
 
 <head>
