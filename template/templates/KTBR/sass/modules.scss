@@ -46,13 +46,25 @@
 	.media {
 		float: left;
 		width: 17.586206897%; //51/290
-		margin-right: 5.172413793%; //15/290
-	}
-	
+		margin: 0 5.172413793% 10px 0; //15/290
+		text-align: center;
 	}
 	
 	.media + .content {
 		padding-left: 22.75862069%; //66/290
+	}
+	
+	&.right {
+		
+		.media {
+			float: right;
+			margin: 0 0 10px 5.172413793%; //15/290
+		}
+		
+		.content {
+			padding-left: 0;
+			margin-top: 0;
+		}
 	}
 }
 
