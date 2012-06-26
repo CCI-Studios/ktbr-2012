@@ -3,9 +3,8 @@
 
 /* @group hmenu */
 .moduletable_hmenu {
-	font-family: "Trajan Pro";
+	@include typekit;
 	font-size: 14px;
-	font-weight: bold;
 	z-index: 5;
 	
 	> ul {
