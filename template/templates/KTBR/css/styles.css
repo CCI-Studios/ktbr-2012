@@ -21,10 +21,14 @@
   color: #fff;
   text-shadow: none; }
 
-.learnMore {
+.learn-more {
   font-family: "Copperplate Gothic Light";
   font-size: inherit;
   padding-left: 13px;
   background: url("../images/arrow.png") center left no-repeat; }
-  .learnMore:hover {
+  .learn-more:hover {
     text-decoration: none; }
+
+@media only screen and (max-width: 480px) {
+  .hidden-phone {
+    display: none !important; } }

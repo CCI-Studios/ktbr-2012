@@ -382,6 +382,18 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   *zoom: 1; }
 
+h1 {
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  margin: 0px 0 20px;
+  padding: 20px 0 10px; }
+
+h2, h3 {
+  font-size: 14px; }
+
+h3 a:hover {
+  text-decoration: none; }
+
 a, a:active, a:visited {
   color: #ffffff;
   text-decoration: none; }
@@ -395,14 +407,10 @@ p {
   p:first-child {
     margin-top: 0; }
 
-h1 {
-  font-size: 30px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
-  margin: 0px 0 20px;
-  padding: 20px 0 10px; }
-
-h2, h3 {
-  font-size: 14px; }
+img {
+  max-width: 100%; }
+  .ie7 img, .ie8 img {
+    max-width: auto; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -445,8 +453,9 @@ button {
 
 /* layout */
 .container {
-  width: 940px;
-  padding: 0 10px;
+  width: 90%;
+  max-width: 940px;
+  padding: 0 1.041666667%;
   margin: 0 auto; }
   #header .container {
     position: relative;
@@ -524,6 +533,10 @@ button {
     color: black;
     text-decoration: none; }
 
+html.ie7 .container, html.ie8 .container {
+  width: 940px;
+  padding: 0 10px; }
+
 /* @group modules */
 .moduletable.masthead {
   padding: 30px 0;
@@ -535,7 +548,7 @@ button {
     font-size: 14px;
     font-weight: bold;
     z-index: 2; }
-  .moduletable.masthead img.bottomRight {
+  .moduletable.masthead img.bottom-right {
     position: absolute;
     bottom: 0;
     right: 21px;
@@ -550,15 +563,16 @@ button {
   .moduletable.socialHeader a {
     padding: 0 10px; }
 
-.moduletable.middle h3 a:hover,
-.moduletable.sidebar h3 a:hover {
-  text-decoration: none; }
-.moduletable.middle p,
-.moduletable.sidebar p {
-  padding-left: 66px; }
-.moduletable.middle img,
-.moduletable.sidebar img {
-  margin-right: 15px; }
+.media-block .media {
+  float: left;
+  width: 17.586206897%;
+  margin-right: 5.172413793%; }
+.media-block .learn-more {
+  margin-left: 22.75862069%;
+  float: left;
+  clear: both; }
+.media-block .media + .content {
+  padding-left: 22.75862069%; }
 
 .moduletable.feed ul {
   padding: 0;
@@ -579,8 +593,8 @@ button {
 
 .moduletable.middle {
   float: left;
-  width: 290px;
-  padding-left: 35px;
+  width: 30.85106383%;
+  padding-left: 3.723404255%;
   font-size: 12px; }
   .moduletable.middle:first-child {
     padding-left: 0; }
@@ -600,6 +614,13 @@ button {
 .moduletable.socialFooter a {
   padding: 0 10px; }
 
+@media only screen and (max-width: 480px) {
+  .moduletable.bottom .custom {
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .moduletable.bottom .custom > * {
+      width: 940px; } }
 /* @group hmenu */
 .moduletable_hmenu {
   font-family: "Trajan Pro";
@@ -670,10 +691,14 @@ button {
   color: #fff;
   text-shadow: none; }
 
-.learnMore {
+.learn-more {
   font-family: "Copperplate Gothic Light";
   font-size: inherit;
   padding-left: 13px;
   background: url("../images/arrow.png") center left no-repeat; }
-  .learnMore:hover {
+  .learn-more:hover {
     text-decoration: none; }
+
+@media only screen and (max-width: 480px) {
+  .hidden-phone {
+    display: none !important; } }

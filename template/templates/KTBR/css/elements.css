@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   *zoom: 1; }
 
+h1 {
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  margin: 0px 0 20px;
+  padding: 20px 0 10px; }
+
+h2, h3 {
+  font-size: 14px; }
+
+h3 a:hover {
+  text-decoration: none; }
+
 a, a:active, a:visited {
   color: #ffffff;
   text-decoration: none; }
@@ -29,11 +41,7 @@ p {
   p:first-child {
     margin-top: 0; }
 
-h1 {
-  font-size: 30px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
-  margin: 0px 0 20px;
-  padding: 20px 0 10px; }
-
-h2, h3 {
-  font-size: 14px; }
+img {
+  max-width: 100%; }
+  .ie7 img, .ie8 img {
+    max-width: auto; }
