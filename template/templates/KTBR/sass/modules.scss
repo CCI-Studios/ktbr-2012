@@ -27,12 +27,16 @@
 	}
 }
 
-.moduletable.socialHeader {
-	position: absolute;
-	top: 30px;
-	right: 0;
-	width: auto;
-	z-index: 10;
+//for header and footer social network links
+.moduletable.social {
+	
+	#header & {
+		position: absolute;
+		top: 30px;
+		right: 5px;
+		width: auto;
+		z-index: 10;
+	}
 	
 	a {
 		padding: 0 10px;
@@ -149,12 +153,6 @@
 }
 
 // copyright
-
-.moduletable.socialFooter {
-	a {
-		padding: 0 10px;
-	}
-}
 
 @media only screen and (max-width: 1024px) {
 	a{} //TODO remove
