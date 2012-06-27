@@ -28,8 +28,6 @@
       #header > div > div > div {
         background: url("../images/bg_header.jpg") bottom center no-repeat;
         margin: 0 auto 0px; }
-        .home #header > div > div > div {
-          background: url("../images/bg_headerHome.jpg") bottom center no-repeat; }
         #header > div > div > div > div {
           background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
           border-bottom: 4px solid black;
@@ -51,18 +49,13 @@
   padding: 0 4.255319149% 0 0; }
   .home #comp {
     width: 100%; }
-  .supporters #comp {
-    text-align: center; }
-    .supporters #comp img {
-      vertical-align: middle;
-      margin: 0 1.170212766% 40px; }
+  .supporters #comp img {
+    vertical-align: middle;
+    margin: 0 1.170212766% 40px; }
 
 #sidebar {
   width: 30.85106383%;
   float: left; }
-
-#bottom {
-  padding: 0 0 25px 0; }
 
 #footer {
   background-color: #000; }

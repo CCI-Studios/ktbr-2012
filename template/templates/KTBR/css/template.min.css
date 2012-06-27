@@ -368,7 +368,7 @@ table {
 body, select, input, textarea {
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: .8125em;
   background-color: #650000; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
@@ -410,7 +410,8 @@ p {
 img {
   max-width: 100%; }
   .ie7 img, .ie8 img {
-    max-width: auto; }
+    max-width: auto;
+    width: auto; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -481,8 +482,6 @@ button {
       #header > div > div > div {
         background: url("../images/bg_header.jpg") bottom center no-repeat;
         margin: 0 auto 0px; }
-        .home #header > div > div > div {
-          background: url("../images/bg_headerHome.jpg") bottom center no-repeat; }
         #header > div > div > div > div {
           background: url("../images/bg_headerBottomGrunge.png") bottom center repeat-x;
           border-bottom: 4px solid black;
@@ -504,18 +503,13 @@ button {
   padding: 0 4.255319149% 0 0; }
   .home #comp {
     width: 100%; }
-  .supporters #comp {
-    text-align: center; }
-    .supporters #comp img {
-      vertical-align: middle;
-      margin: 0 1.170212766% 40px; }
+  .supporters #comp img {
+    vertical-align: middle;
+    margin: 0 1.170212766% 40px; }
 
 #sidebar {
   width: 30.85106383%;
   float: left; }
-
-#bottom {
-  padding: 0 0 25px 0; }
 
 #footer {
   background-color: #000; }
@@ -564,20 +558,23 @@ html.ie7 #sidebar, html.ie8 #sidebar {
     font-size: 14px;
     font-weight: bold;
     z-index: 2; }
-  .moduletable.masthead img.bottom-right {
+  .moduletable.masthead img.profile {
     position: absolute;
     bottom: 0;
-    right: 21px;
+    right: 0;
     z-index: 2; }
 
-.moduletable.socialHeader {
+#header .moduletable.social {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 5px;
   width: auto;
   z-index: 10; }
-  .moduletable.socialHeader a {
-    padding: 0 10px; }
+.moduletable.social a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 10px; }
 
 .media-block .media {
   float: left;
@@ -633,16 +630,24 @@ html.ie7 #sidebar, html.ie8 #sidebar {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin: 0 1.223404255% 1em; }
+  margin: 0 1.223404255% 1em;
+  vertical-align: middle; }
   .moduletable.sponsors a:hover {
     text-decoration: none; }
 
-.moduletable.socialFooter a {
-  padding: 0 10px; }
-
 @media only screen and (max-width: 1024px) {
+  .moduletable.masthead img.profile {
+    width: 40%;
+    height: inherit; }
+
   .moduletable.sponsors a {
     margin: 0 5.319148936% 1em; } }
+@media only screen and (max-width: 959px) {
+  .moduletable.masthead p {
+    width: 100%; }
+
+  .moduletable.masthead img.profile {
+    display: none; } }
 @media only screen and (max-width: 768px) {
   .moduletable.sidebar {
     float: left;
@@ -651,19 +656,16 @@ html.ie7 #sidebar, html.ie8 #sidebar {
     .moduletable.sidebar h3 {
       padding-top: 0; } }
 @media only screen and (max-width: 480px) {
-  .moduletable.masthead p {
-    width: 100%; }
-
   .moduletable.middle, .moduletable.sidebar {
     float: none;
     width: 100%;
     padding-left: 0; }
 
-  .moduletable.sponsors .custom {
+  .moduletable.sponsors > div {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
-    .moduletable.sponsors .custom > * {
+    .moduletable.sponsors > div > * {
       width: 940px; }
   .moduletable.sponsors a {
     margin: 0 1.223404255% 1em; } }
@@ -673,6 +675,8 @@ html.ie7 .moduletable.middle, html.ie8 .moduletable.middle {
   float: left;
   width: 30.85106383%;
   padding-left: 3.723404255%; }
+  html.ie7 .moduletable.middle:first-child, html.ie8 .moduletable.middle:first-child {
+    padding-left: 0; }
 html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   padding: 10px 0 0 0; }
   html.ie7 .moduletable.sidebar:first-child, html.ie8 .moduletable.sidebar:first-child {
@@ -705,7 +709,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   position: relative;
   z-index: 10; }
   .moduletable_hmenu.primary li {
-    padding: 0 0 0 50px; }
+    padding: 0 0 0 5.85106383%; }
     .moduletable_hmenu.primary li:first-child {
       padding-left: 0; }
     .moduletable_hmenu.primary li a {
@@ -718,7 +722,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
 .moduletable_hmenu.secondary {
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -732,6 +736,9 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
     .moduletable_hmenu.secondary > ul li a:hover {
       text-decoration: none; }
 
+@media only screen and (max-width: 768px) {
+  .moduletable_hmenu.secondary {
+    font-size: 1em; } }
 /* styles */
 .clr, .clear {
   clear: both; }
@@ -758,7 +765,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
 .learn-more {
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: inherit;
   background: url("../images/arrow.png") center left no-repeat;
   padding-left: 13px; }

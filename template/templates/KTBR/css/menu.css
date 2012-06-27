@@ -20,7 +20,7 @@
   position: relative;
   z-index: 10; }
   .moduletable_hmenu.primary li {
-    padding: 0 0 0 50px; }
+    padding: 0 0 0 5.85106383%; }
     .moduletable_hmenu.primary li:first-child {
       padding-left: 0; }
     .moduletable_hmenu.primary li a {
@@ -33,7 +33,7 @@
 .moduletable_hmenu.secondary {
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -46,3 +46,7 @@
       border-left: none; }
     .moduletable_hmenu.secondary > ul li a:hover {
       text-decoration: none; }
+
+@media only screen and (max-width: 768px) {
+  .moduletable_hmenu.secondary {
+    font-size: 1em; } }

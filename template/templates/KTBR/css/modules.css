@@ -9,20 +9,23 @@
     font-size: 14px;
     font-weight: bold;
     z-index: 2; }
-  .moduletable.masthead img.bottom-right {
+  .moduletable.masthead img.profile {
     position: absolute;
     bottom: 0;
-    right: 21px;
+    right: 0;
     z-index: 2; }
 
-.moduletable.socialHeader {
+#header .moduletable.social {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 5px;
   width: auto;
   z-index: 10; }
-  .moduletable.socialHeader a {
-    padding: 0 10px; }
+.moduletable.social a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 10px; }
 
 .media-block .media {
   float: left;
@@ -78,16 +81,24 @@
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin: 0 1.223404255% 1em; }
+  margin: 0 1.223404255% 1em;
+  vertical-align: middle; }
   .moduletable.sponsors a:hover {
     text-decoration: none; }
 
-.moduletable.socialFooter a {
-  padding: 0 10px; }
-
 @media only screen and (max-width: 1024px) {
+  .moduletable.masthead img.profile {
+    width: 40%;
+    height: inherit; }
+
   .moduletable.sponsors a {
     margin: 0 5.319148936% 1em; } }
+@media only screen and (max-width: 959px) {
+  .moduletable.masthead p {
+    width: 100%; }
+
+  .moduletable.masthead img.profile {
+    display: none; } }
 @media only screen and (max-width: 768px) {
   .moduletable.sidebar {
     float: left;
@@ -96,19 +107,16 @@
     .moduletable.sidebar h3 {
       padding-top: 0; } }
 @media only screen and (max-width: 480px) {
-  .moduletable.masthead p {
-    width: 100%; }
-
   .moduletable.middle, .moduletable.sidebar {
     float: none;
     width: 100%;
     padding-left: 0; }
 
-  .moduletable.sponsors .custom {
+  .moduletable.sponsors > div {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
-    .moduletable.sponsors .custom > * {
+    .moduletable.sponsors > div > * {
       width: 940px; }
   .moduletable.sponsors a {
     margin: 0 1.223404255% 1em; } }
@@ -118,6 +126,8 @@ html.ie7 .moduletable.middle, html.ie8 .moduletable.middle {
   float: left;
   width: 30.85106383%;
   padding-left: 3.723404255%; }
+  html.ie7 .moduletable.middle:first-child, html.ie8 .moduletable.middle:first-child {
+    padding-left: 0; }
 html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   padding: 10px 0 0 0; }
   html.ie7 .moduletable.sidebar:first-child, html.ie8 .moduletable.sidebar:first-child {
