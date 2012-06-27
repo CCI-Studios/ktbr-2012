@@ -234,6 +234,9 @@ html.ie7, html.ie8 {
 			float: left;
 			width: 30.85106383%; //290/940
 			padding-left: 3.723404255%; //35/940
+			&:first-child {
+				padding-left: 0;
+			}
 		}
 		
 		&.sidebar {
