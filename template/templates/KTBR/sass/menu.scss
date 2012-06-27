@@ -3,7 +3,7 @@
 
 /* @group hmenu */
 .moduletable_hmenu {
-	@include typekit;
+	@include typekit-bold;
 	font-size: 14px;
 	z-index: 5;
 	
@@ -44,7 +44,7 @@
 }
 
 .moduletable_hmenu.secondary {
-	@include typekit;
+	@include typekit-normal;
 	font-size: 10px;
 	line-height: 10px;
 	text-align: center;

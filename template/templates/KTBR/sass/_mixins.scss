@@ -1,4 +1,10 @@
-@mixin typekit {
+@mixin typekit-normal {
+	font-family: "trajan-pro", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin typekit-bold {
 	font-family: "trajan-pro", sans-serif;
 	font-style: normal;
 	font-weight: 700;

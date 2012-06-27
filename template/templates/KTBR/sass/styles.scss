@@ -12,7 +12,7 @@
 ::selection { background: $red; color:#fff; text-shadow: none; }
 
 .learn-more {
-	@include typekit;
+	@include typekit-normal;
 	font-size: inherit;
 	
 	background: url('../images/arrow.png') center left no-repeat;
