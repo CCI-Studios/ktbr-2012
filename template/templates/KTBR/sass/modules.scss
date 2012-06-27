@@ -45,7 +45,6 @@
 }
 
 // middle mods
-
 .media-block {
 	
 	.media {
@@ -222,7 +221,7 @@
 	
 	.moduletable.sponsors {
 		
-		.custom {
+		> div {
 			width: 100%;
 			overflow: scroll;
 			-webkit-overflow-scrolling: touch;
@@ -237,6 +236,8 @@
 		}
 	}
 }
+
+
 
 //ie
 html.ie7, html.ie8 {
