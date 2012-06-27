@@ -5,7 +5,7 @@
 body, select, input, textarea {
 	color: #fff;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 13px;
+	font-size: .8125em;
 	background-color: #650000;
 }
 
@@ -57,6 +57,7 @@ img {
 
 	.ie7 &, .ie8 & {
 		max-width: auto;
+		width: auto; //fix for ie8 
 	}
 }
 
