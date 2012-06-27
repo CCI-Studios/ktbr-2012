@@ -12,9 +12,7 @@
 		padding: 0px;
 		
 		> li {
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
+			@include hasLayout;
 			position: relative;
 			padding: 0 5px;
 		}
