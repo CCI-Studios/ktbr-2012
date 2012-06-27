@@ -39,6 +39,7 @@
 	}
 	
 	a {
+		@include hasLayout;
 		padding: 0 10px;
 	}
 }
@@ -141,9 +142,7 @@
 	}
 	
 	a {	
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
+		@include hasLayout;
 		margin: 0 1.223404255% 1em;
 		
 		&:hover {
