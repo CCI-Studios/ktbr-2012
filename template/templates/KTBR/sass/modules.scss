@@ -173,6 +173,24 @@
 	}
 }
 
+@media only screen and (max-width: 959px) {
+	
+	.moduletable.masthead {
+
+		p {
+			width: 100%;
+		}
+	}
+	
+	.moduletable.masthead {
+
+		img.profile {
+			display: none;
+		}
+	}
+	
+}
+
 @media only screen and (max-width: 768px) {
 	a{} //TODO remove
 	
@@ -193,13 +211,6 @@
 @media only screen and (max-width: 480px) {
 	a{} //TODO remove
 	
-	.moduletable.masthead {
-
-		p {
-			width: 100%;
-		}
-	}
-
 	.moduletable {
 		&.middle,
 		&.sidebar {
