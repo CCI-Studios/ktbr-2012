@@ -264,7 +264,16 @@
 //ie
 html.ie7, html.ie8 {
 	
+	.moduletable.social {
+
+		#header & {
+			top: 30px;
+			right: 0;
+		}
+	}
+	
 	.moduletable.masthead {
+		padding: 30px 0;
 
 		p {
 			width: 45.744680851%;
