@@ -98,3 +98,12 @@
 		font-size: 1em;
 	}
 }
+
+//ie
+html.ie7, html.ie8 {
+	
+	.moduletable_vmenu.mobile {
+		display: none;
+	}
+	
+}
