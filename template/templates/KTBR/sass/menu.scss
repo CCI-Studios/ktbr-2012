@@ -64,6 +64,34 @@
 	}
 }
 
+.moduletable_vmenu.mobile {
+	height: 0px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, .85);
+	border-radius: 5px;
+	
+	@include transition(height 250ms ease-in-out);
+
+	> ul {
+		margin: 0;
+		padding: 0 10px;
+		list-style: none;
+		
+		li {
+			line-height: 44px;
+		}
+	}
+	
+	a {
+		font-size: 16px;
+		color: $red;
+	}
+	
+	&.menu-open {
+		height: 270px;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.moduletable_hmenu.secondary {
 		font-size: 1em;
