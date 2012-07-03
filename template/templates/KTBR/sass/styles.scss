@@ -23,7 +23,24 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
+.btn {
+	@include btn;
+	
+	&:hover {
+		-webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
+	    -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
+	    box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
+	}
+}
+
+.btn .icon-bar {
+	@include icon-bar;
+}
+
+.btn .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
 .visible-mobile {
   display: none !important;
 }
