@@ -31,14 +31,14 @@
         text-decoration: none; }
 
 .moduletable_hmenu.secondary {
-  font-family: "trajan-pro", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   padding: 15px 0;
-  background: url("../images/bg_footerTopGrunge.png") bottom center repeat-x; }
+  background: url("../images/bg_footerTopGrunge.png") bottom center repeat-x;
+  font-family: "trajan-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
   .moduletable_hmenu.secondary > ul li {
     border-left: 1px solid #fff;
     padding: 0 15px; }
@@ -46,6 +46,28 @@
       border-left: none; }
     .moduletable_hmenu.secondary > ul li a:hover {
       text-decoration: none; }
+
+.moduletable_vmenu.mobile {
+  height: 0px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  -webkit-transition: height 250ms ease-in-out;
+  -moz-transition: height 250ms ease-in-out;
+  -o-transition: height 250ms ease-in-out;
+  -ms-transition: height 250ms ease-in-out;
+  transition: height 250ms ease-in-out; }
+  .moduletable_vmenu.mobile > ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none; }
+    .moduletable_vmenu.mobile > ul li {
+      line-height: 44px; }
+  .moduletable_vmenu.mobile a {
+    font-size: 16px;
+    color: #c00000; }
+  .moduletable_vmenu.mobile.menu-open {
+    height: 270px; }
 
 @media only screen and (max-width: 768px) {
   .moduletable_hmenu.secondary {

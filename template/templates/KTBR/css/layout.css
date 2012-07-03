@@ -15,13 +15,13 @@
 #header {
   border-top: 25px solid black;
   background: url("../images/bg_headerTop.png") top center repeat-x;
-  background-color: #ffffff;
+  background-color: #000000;
   margin-top: -25px;
   position: relative;
   *zoom: 1; }
   #header > div {
     margin-top: 25px;
-    background: url("../images/bg_headerTopGrunge.png") top center repeat-x;
+    background: white url("../images/bg_headerTopGrunge.png") top center repeat-x;
     padding: 1px 0 0 0; }
     #header > div > div {
       background: url("../images/bg_headerGradient.png") bottom center repeat-x; }
@@ -74,6 +74,9 @@
     text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
+  #header .container {
+    padding-top: 50px; }
+
   #comp {
     float: none;
     width: 100%;
