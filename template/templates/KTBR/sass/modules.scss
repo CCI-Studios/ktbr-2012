@@ -194,6 +194,14 @@
 @media only screen and (max-width: 768px) {
 	a{} //TODO remove
 	
+	
+	.moduletable.social {
+
+		#header & {
+			top: 12px;
+		}
+	}
+	
 	.moduletable.masthead {
 		padding: 20px 0 30px;
 	}
