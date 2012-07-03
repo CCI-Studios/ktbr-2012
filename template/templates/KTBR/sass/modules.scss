@@ -194,6 +194,10 @@
 @media only screen and (max-width: 768px) {
 	a{} //TODO remove
 	
+	.moduletable.masthead {
+		padding: 20px 0 30px;
+	}
+	
 	.moduletable {
 
 		&.sidebar {
