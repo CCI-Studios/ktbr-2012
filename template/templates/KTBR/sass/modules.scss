@@ -218,6 +218,15 @@
 			}
 		}
 	}
+	
+	.moduletable.show-menu {
+		position: absolute;
+		top: 10px;
+		left: 0px;
+		
+		height: 20px;
+		width: auto;
+	}
 }
 
 @media only screen and (max-width: 480px) {
