@@ -42,12 +42,13 @@
 }
 
 .moduletable_hmenu.secondary {
-	@include typekit-normal;
 	font-size: 10px;
 	line-height: 10px;
 	text-align: center;
 	padding: 15px 0;
 	background: url('../images/bg_footerTopGrunge.png') bottom center repeat-x;
+	
+	@include typekit-normal;
 	
 	> ul {
 		li {

@@ -141,9 +141,10 @@
 	}
 	
 	a {	
-		@include hasLayout;
 		margin: 0 1.223404255% 1em;
 		vertical-align: middle;
+		
+		@include hasLayout;
 		
 		&:hover {
 			text-decoration: none;
