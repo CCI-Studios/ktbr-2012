@@ -462,10 +462,6 @@ button {
     position: relative;
     z-index: 1;
     padding: 0; }
-  #body .container {
-    padding-top: 20px; }
-    .home #body .container {
-      padding-top: 0; }
 
 #header {
   border-top: 25px solid black;
@@ -511,6 +507,9 @@ button {
 #sidebar {
   width: 30.85106383%;
   float: left; }
+
+#bottom {
+  overflow: hidden; }
 
 #footer {
   background-color: #000; }
@@ -745,6 +744,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  white-space: nowrap;
   padding: 15px 0;
   background: url("../images/bg_footerTopGrunge.png") bottom center repeat-x;
   font-family: "trajan-pro", sans-serif;
@@ -752,7 +752,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   font-weight: 400; }
   .moduletable_hmenu.secondary > ul li {
     border-left: 1px solid #fff;
-    padding: 0 15px; }
+    padding: 0 1.595744681%; }
     .moduletable_hmenu.secondary > ul li:first-child {
       border-left: none; }
     .moduletable_hmenu.secondary > ul li a:hover {
@@ -783,6 +783,9 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
 @media only screen and (max-width: 768px) {
   .moduletable_hmenu.secondary {
     font-size: 1em; } }
+html.ie7 .moduletable_vmenu.mobile, html.ie8 .moduletable_vmenu.mobile {
+  display: none; }
+
 /* styles */
 .clr, .clear {
   clear: both; }

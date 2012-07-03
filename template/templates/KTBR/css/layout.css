@@ -8,10 +8,6 @@
     position: relative;
     z-index: 1;
     padding: 0; }
-  #body .container {
-    padding-top: 20px; }
-    .home #body .container {
-      padding-top: 0; }
 
 #header {
   border-top: 25px solid black;
@@ -57,6 +53,9 @@
 #sidebar {
   width: 30.85106383%;
   float: left; }
+
+#bottom {
+  overflow: hidden; }
 
 #footer {
   background-color: #000; }
