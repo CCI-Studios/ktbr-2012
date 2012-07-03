@@ -24,7 +24,7 @@
 	transition: $settings;
 }
 
-@mixin btn {
+@mixin btn-navbar {
 	display: inline-block;
   	*display: inline;
  	 /* IE7 inline-block hack */

@@ -815,7 +815,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   .learn-more:hover {
     text-decoration: none; }
 
-.btn {
+.btn-navbar {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -831,7 +831,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   vertical-align: middle;
   cursor: pointer;
   background-color: #c00000;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: #222222 #222222 #000000;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border: 1px solid #cccccc;
   *border: 0;
@@ -843,12 +843,12 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4); }
-  .btn:hover {
+  .btn-navbar:hover {
     -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6); }
 
-.btn .icon-bar {
+.btn-navbar .icon-bar {
   display: block;
   width: 18px;
   height: 2px;
@@ -860,7 +860,7 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
 
-.btn .icon-bar + .icon-bar {
+.btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px; }
 
 .visible-mobile {
