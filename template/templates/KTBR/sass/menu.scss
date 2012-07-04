@@ -15,6 +15,7 @@
 		> li {
 			position: relative;
 			padding: 0 5px;
+			
 			@include hasLayout;
 		}
 	}
@@ -69,28 +70,49 @@
 .moduletable_vmenu.mobile {
 	height: 0px;
 	overflow: hidden;
-	background: rgba(0, 0, 0, .85);
 	border-radius: 5px;
 	
+	@include typekit-bold;
 	@include transition(height 250ms ease-in-out);
 
 	> ul {
 		margin: 0;
-		padding: 0 10px;
+		padding: 0;
 		list-style: none;
 		
 		li {
 			line-height: 44px;
+			border-top: 1px solid #525252;
+			padding: 0 15px;
+			
+			background: -webkit-linear-gradient(top, #333333, #000000);
+			background: -moz-linear-gradient(top, #333333, #000000);
+			background: -o-linear-gradient(top, #333333, #000000);
+			background: -ms-linear-gradient(top, #333333, #000000);
+			background: linear-gradient(top, #333333, #000000);icon
+			
+			&:first-child {
+				border-top: 0;
+			}
+			&:hover {
+				background: $red;
+			}
 		}
 	}
 	
 	a {
-		font-size: 16px;
-		color: $red;
+		font-size: 14px;
+		color: #fff;
+		display: block;
+		
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	
 	&.menu-open {
-		height: 270px;
+		height: 269px;
+		margin-bottom: 10px;
 	}
 }
 
