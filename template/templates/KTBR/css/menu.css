@@ -51,7 +51,6 @@
 .moduletable_vmenu.mobile {
   height: 0px;
   overflow: hidden;
-  border-radius: 5px;
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -67,25 +66,30 @@
     .moduletable_vmenu.mobile > ul li {
       line-height: 44px;
       border-top: 1px solid #525252;
-      padding: 0 15px;
       background: -webkit-linear-gradient(top, #333333, black);
       background: -moz-linear-gradient(top, #333333, black);
       background: -o-linear-gradient(top, #333333, black);
       background: -ms-linear-gradient(top, #333333, black);
       background: linear-gradient(top, #333333, black); }
       icon
-      .moduletable_vmenu.mobile > ul li:first-child {
-        border-top: 0; }
       .moduletable_vmenu.mobile > ul li:hover {
         background: #c00000; }
+  .moduletable_vmenu.mobile li:first-child {
+    border-width: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .moduletable_vmenu.mobile li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
   .moduletable_vmenu.mobile a {
     font-size: 14px;
     color: #fff;
-    display: block; }
+    display: block;
+    padding: 0 15px; }
     .moduletable_vmenu.mobile a:hover {
       text-decoration: none; }
   .moduletable_vmenu.mobile.menu-open {
-    height: 269px;
+    height: 270px;
     margin-bottom: 10px; }
 
 @media only screen and (max-width: 768px) {

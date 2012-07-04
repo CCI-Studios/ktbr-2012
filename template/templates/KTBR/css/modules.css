@@ -127,7 +127,7 @@
 
   .moduletable.sponsors > div {
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch; }
     .moduletable.sponsors > div > * {
       width: 940px; }
