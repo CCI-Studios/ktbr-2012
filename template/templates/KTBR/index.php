@@ -35,7 +35,7 @@ $typekit = "onv1ipz";
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" type="image/x-icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="shortcut icon" type="image/x-icon" href="/templates/OAB/favicon.ico">	
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
