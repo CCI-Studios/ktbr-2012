@@ -39,6 +39,10 @@
   display: none !important;
 }
 
+.visible-phone {
+	display: none !important;
+}
+
 @media only screen and (max-width: 768px) {
 	a{} //TODO remove
 	
@@ -56,6 +60,10 @@
 	
 	.hidden-phone {
 		display: none !important; 
+	}
+	
+	.visible-phone {
+		display: inherit !important;
 	}
 }
 
