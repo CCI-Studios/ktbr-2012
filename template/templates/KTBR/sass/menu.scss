@@ -3,18 +3,19 @@
 
 /* @group hmenu */
 .moduletable_hmenu {
-	@include typekit-bold;
 	font-size: 14px;
 	z-index: 5;
+	
+	@include typekit-bold;
 	
 	> ul {
 		margin: 0;
 		padding: 0px;
 		
 		> li {
-			@include hasLayout;
 			position: relative;
 			padding: 0 5px;
+			@include hasLayout;
 		}
 	}
 }
