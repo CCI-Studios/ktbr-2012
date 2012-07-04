@@ -1,19 +1,19 @@
 /* @group hmenu */
 .moduletable_hmenu {
+  font-size: 14px;
+  z-index: 5;
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  z-index: 5; }
+  font-weight: 700; }
   .moduletable_hmenu > ul {
     margin: 0;
     padding: 0px; }
     .moduletable_hmenu > ul > li {
+      position: relative;
+      padding: 0 5px;
       display: inline-block;
       *display: inline;
-      *zoom: 1;
-      position: relative;
-      padding: 0 5px; }
+      *zoom: 1; }
 
 .moduletable_hmenu.primary {
   padding: 35px 0 15px;
@@ -51,8 +51,10 @@
 .moduletable_vmenu.mobile {
   height: 0px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.85);
   border-radius: 5px;
+  font-family: "trajan-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   -webkit-transition: height 250ms ease-in-out;
   -moz-transition: height 250ms ease-in-out;
   -o-transition: height 250ms ease-in-out;
@@ -60,15 +62,31 @@
   transition: height 250ms ease-in-out; }
   .moduletable_vmenu.mobile > ul {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     list-style: none; }
     .moduletable_vmenu.mobile > ul li {
-      line-height: 44px; }
+      line-height: 44px;
+      border-top: 1px solid #525252;
+      padding: 0 15px;
+      background: -webkit-linear-gradient(top, #333333, black);
+      background: -moz-linear-gradient(top, #333333, black);
+      background: -o-linear-gradient(top, #333333, black);
+      background: -ms-linear-gradient(top, #333333, black);
+      background: linear-gradient(top, #333333, black); }
+      icon
+      .moduletable_vmenu.mobile > ul li:first-child {
+        border-top: 0; }
+      .moduletable_vmenu.mobile > ul li:hover {
+        background: #c00000; }
   .moduletable_vmenu.mobile a {
-    font-size: 16px;
-    color: #c00000; }
+    font-size: 14px;
+    color: #fff;
+    display: block; }
+    .moduletable_vmenu.mobile a:hover {
+      text-decoration: none; }
   .moduletable_vmenu.mobile.menu-open {
-    height: 270px; }
+    height: 269px;
+    margin-bottom: 10px; }
 
 @media only screen and (max-width: 768px) {
   .moduletable_hmenu.secondary {

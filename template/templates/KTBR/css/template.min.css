@@ -656,7 +656,7 @@ html.ie7 #sidebar, html.ie8 #sidebar {
     top: 12px; }
 
   .moduletable.masthead {
-    padding: 20px 0 30px; }
+    padding: 10px 0 30px; }
 
   .moduletable.sidebar {
     float: left;
@@ -710,20 +710,20 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
 
 /* @group hmenu */
 .moduletable_hmenu {
+  font-size: 14px;
+  z-index: 5;
   font-family: "trajan-pro", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  z-index: 5; }
+  font-weight: 700; }
   .moduletable_hmenu > ul {
     margin: 0;
     padding: 0px; }
     .moduletable_hmenu > ul > li {
+      position: relative;
+      padding: 0 5px;
       display: inline-block;
       *display: inline;
-      *zoom: 1;
-      position: relative;
-      padding: 0 5px; }
+      *zoom: 1; }
 
 .moduletable_hmenu.primary {
   padding: 35px 0 15px;
@@ -761,8 +761,10 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
 .moduletable_vmenu.mobile {
   height: 0px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.85);
   border-radius: 5px;
+  font-family: "trajan-pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   -webkit-transition: height 250ms ease-in-out;
   -moz-transition: height 250ms ease-in-out;
   -o-transition: height 250ms ease-in-out;
@@ -770,15 +772,31 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
   transition: height 250ms ease-in-out; }
   .moduletable_vmenu.mobile > ul {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     list-style: none; }
     .moduletable_vmenu.mobile > ul li {
-      line-height: 44px; }
+      line-height: 44px;
+      border-top: 1px solid #525252;
+      padding: 0 15px;
+      background: -webkit-linear-gradient(top, #333333, black);
+      background: -moz-linear-gradient(top, #333333, black);
+      background: -o-linear-gradient(top, #333333, black);
+      background: -ms-linear-gradient(top, #333333, black);
+      background: linear-gradient(top, #333333, black); }
+      icon
+      .moduletable_vmenu.mobile > ul li:first-child {
+        border-top: 0; }
+      .moduletable_vmenu.mobile > ul li:hover {
+        background: #c00000; }
   .moduletable_vmenu.mobile a {
-    font-size: 16px;
-    color: #c00000; }
+    font-size: 14px;
+    color: #fff;
+    display: block; }
+    .moduletable_vmenu.mobile a:hover {
+      text-decoration: none; }
   .moduletable_vmenu.mobile.menu-open {
-    height: 270px; }
+    height: 269px;
+    margin-bottom: 10px; }
 
 @media only screen and (max-width: 768px) {
   .moduletable_hmenu.secondary {
@@ -835,22 +853,10 @@ html.ie7 .moduletable_vmenu.mobile, html.ie8 .moduletable_vmenu.mobile {
   vertical-align: middle;
   cursor: pointer;
   background-color: #c00000;
-  border-color: #222222 #222222 #000000;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border: 1px solid #cccccc;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4); }
-  .btn-navbar:hover {
-    -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6); }
+  *margin-left: .3em; }
 
 .btn-navbar .icon-bar {
   display: block;
@@ -870,6 +876,9 @@ html.ie7 .moduletable_vmenu.mobile, html.ie8 .moduletable_vmenu.mobile {
 .visible-mobile {
   display: none !important; }
 
+.visible-phone {
+  display: none !important; }
+
 @media only screen and (max-width: 768px) {
   .visible-mobile {
     display: inherit !important; }
@@ -878,4 +887,7 @@ html.ie7 .moduletable_vmenu.mobile, html.ie8 .moduletable_vmenu.mobile {
     display: none !important; } }
 @media only screen and (max-width: 480px) {
   .hidden-phone {
-    display: none !important; } }
+    display: none !important; }
+
+  .visible-phone {
+    display: inherit !important; } }

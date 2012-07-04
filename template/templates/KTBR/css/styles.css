@@ -47,22 +47,10 @@
   vertical-align: middle;
   cursor: pointer;
   background-color: #c00000;
-  border-color: #222222 #222222 #000000;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border: 1px solid #cccccc;
-  *border: 0;
-  border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  *margin-left: .3em;
-  -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.4); }
-  .btn-navbar:hover {
-    -webkit-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0px 1px 9px rgba(0, 0, 0, 0.6); }
+  *margin-left: .3em; }
 
 .btn-navbar .icon-bar {
   display: block;
@@ -82,6 +70,9 @@
 .visible-mobile {
   display: none !important; }
 
+.visible-phone {
+  display: none !important; }
+
 @media only screen and (max-width: 768px) {
   .visible-mobile {
     display: inherit !important; }
@@ -90,4 +81,7 @@
     display: none !important; } }
 @media only screen and (max-width: 480px) {
   .hidden-phone {
-    display: none !important; } }
+    display: none !important; }
+
+  .visible-phone {
+    display: inherit !important; } }
