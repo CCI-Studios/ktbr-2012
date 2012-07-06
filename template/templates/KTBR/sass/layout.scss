@@ -140,6 +140,10 @@ html.ie7, html.ie8 {
 		padding: 0 10px;
 	}
 	
+	#body .container {
+		background: #000 url('../images/bg_body.jpg') top center no-repeat; //TODO CHECK IF THIS IS OKAY
+	}
+	
 	#comp {
 		float: left;
 		width: 610px;
