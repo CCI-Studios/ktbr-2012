@@ -31,10 +31,10 @@
           position: relative;
           *zoom: 1; }
           #header > div > div > div > div .headerBottomImg {
-            position: absolute;
-            right: 0;
+            position: relative;
             bottom: -3px;
-            z-index: 5; }
+            z-index: 5;
+            text-align: right; }
 
 #body {
   background: black url("../images/bg_body.jpg") top center no-repeat;
@@ -88,6 +88,8 @@
 html.ie7 .container, html.ie8 .container {
   width: 940px;
   padding: 0 10px; }
+html.ie7 #body .container, html.ie8 #body .container {
+  background: black url("../images/bg_body.jpg") top center no-repeat; }
 html.ie7 #comp, html.ie8 #comp {
   float: left;
   width: 610px;

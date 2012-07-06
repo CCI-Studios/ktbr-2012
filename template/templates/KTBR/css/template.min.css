@@ -485,10 +485,10 @@ button {
           position: relative;
           *zoom: 1; }
           #header > div > div > div > div .headerBottomImg {
-            position: absolute;
-            right: 0;
+            position: relative;
             bottom: -3px;
-            z-index: 5; }
+            z-index: 5;
+            text-align: right; }
 
 #body {
   background: black url("../images/bg_body.jpg") top center no-repeat;
@@ -542,6 +542,8 @@ button {
 html.ie7 .container, html.ie8 .container {
   width: 940px;
   padding: 0 10px; }
+html.ie7 #body .container, html.ie8 #body .container {
+  background: black url("../images/bg_body.jpg") top center no-repeat; }
 html.ie7 #comp, html.ie8 #comp {
   float: left;
   width: 610px;
@@ -552,7 +554,7 @@ html.ie7 #sidebar, html.ie8 #sidebar {
 
 /* @group modules */
 .moduletable.masthead {
-  padding: 30px 0;
+  padding: 30px 0 0;
   color: black;
   border-top: 1px solid #d8d8d8;
   z-index: 2; }
@@ -570,7 +572,7 @@ html.ie7 #sidebar, html.ie8 #sidebar {
 #header .moduletable.social {
   position: absolute;
   top: 30px;
-  right: 5px;
+  right: 0;
   width: auto;
   z-index: 10; }
 .moduletable.social a {
@@ -656,7 +658,7 @@ html.ie7 #sidebar, html.ie8 #sidebar {
     top: 12px; }
 
   .moduletable.masthead {
-    padding: 10px 0 30px; }
+    padding: 10px 0 0; }
 
   .moduletable.sidebar {
     float: left;
@@ -689,7 +691,7 @@ html.ie7 #sidebar, html.ie8 #sidebar {
   top: 30px;
   right: 0; }
 html.ie7 .moduletable.masthead, html.ie8 .moduletable.masthead {
-  padding: 30px 0; }
+  padding: 30px 0 0; }
   html.ie7 .moduletable.masthead p, html.ie8 .moduletable.masthead p {
     width: 45.744680851%; }
 html.ie7 .moduletable.middle, html.ie8 .moduletable.middle {
