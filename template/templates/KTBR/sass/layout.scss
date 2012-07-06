@@ -44,10 +44,10 @@
 					*zoom: 1; //fix for IE7
 					
 					.headerBottomImg {
-						position: absolute;
-						right: 0;
+						position: relative;
 						bottom: -3px;
 						z-index: 5;
+						text-align: right;
 					}
 				}
 			}
