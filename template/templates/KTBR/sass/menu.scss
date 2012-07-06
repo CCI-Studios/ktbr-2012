@@ -95,6 +95,10 @@
 		}
 	}
 	
+	li:hover {
+		background: $red;
+	}
+	
 	li:first-child {
 		border-width: 0;
 		border-top-left-radius: 5px;
