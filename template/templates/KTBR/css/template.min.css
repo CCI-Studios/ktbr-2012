@@ -781,9 +781,8 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
       background: -o-linear-gradient(top, #333333, black);
       background: -ms-linear-gradient(top, #333333, black);
       background: linear-gradient(top, #333333, black); }
-      icon
-      .moduletable_vmenu.mobile > ul li:hover {
-        background: #c00000; }
+  .moduletable_vmenu.mobile li:hover {
+    background: #c00000; }
   .moduletable_vmenu.mobile li:first-child {
     border-width: 0;
     border-top-left-radius: 5px;
@@ -795,7 +794,9 @@ html.ie7 .moduletable.sidebar, html.ie8 .moduletable.sidebar {
     font-size: 14px;
     color: #fff;
     display: block;
-    padding: 0 15px; }
+    padding: 0 15px;
+    background: url("../images/arrow_menu.png") 95% center no-repeat;
+    background-size: 7px 8px; }
     .moduletable_vmenu.mobile a:hover {
       text-decoration: none; }
   .moduletable_vmenu.mobile.menu-open {
